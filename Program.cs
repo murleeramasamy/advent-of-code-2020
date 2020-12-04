@@ -1,6 +1,7 @@
 ﻿using AdventOfCode._2020_Day_1;
 using AdventOfCode._2020_Day_2;
 using AdventOfCode._2020_Day_3;
+using AdventOfCode._2020_Day_4;
 using System;
 
 namespace AdventOfCode
@@ -46,6 +47,17 @@ namespace AdventOfCode
 
             Console.WriteLine($"Day 3: Number of trees encountered: {numberOfTreesEncountered}");
             Console.WriteLine($"Day 3: Number of trees encountered (all slopes product): {numberofTreesEncounteredProduct}");
+            Console.WriteLine();
+
+            // Day 4
+            string day4FilePath = @"C:\Users\musomanu\source\advent-of-code-2020\2020-Day-4\PassportProcessingInput.txt";
+
+            PassportProcessing passportProcessing = new PassportProcessing(day4FilePath);
+            var numberOfValidPassports = passportProcessing.GetValidPassportsCount();
+            var numberOfValidPassportsRevised = passportProcessing.GetValidPassportsCountRevised();
+
+            Console.WriteLine($"Day 4: Number of valid passports: {numberOfValidPassports}");
+            Console.WriteLine($"Day 4: Number of valid passports (revised validation): {numberOfValidPassportsRevised}");
             Console.WriteLine();
         }
     }

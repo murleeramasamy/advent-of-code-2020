@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AdventOfCode._2020_Day_4
+﻿namespace AdventOfCode._2020_Day_4
 {
     class PassportProcessing
     {

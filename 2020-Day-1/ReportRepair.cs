@@ -15,15 +15,12 @@ namespace AdventOfCode._2020_Day_1
 
         private void readInput(string filePath)
         {
-            // TODO: Handle exception when file read fails
             string[] lines = System.IO.File.ReadAllLines(filePath);
 
             foreach (string line in lines)
             {
-                // TODO: Handle exception when the string can't be converted into an integer.
                 int number = Int32.Parse(line);
 
-                // TODO: Account for duplicate number
                 this.reportedNumbers.Add(number);
             }
         }

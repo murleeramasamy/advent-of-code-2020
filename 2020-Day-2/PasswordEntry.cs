@@ -11,7 +11,6 @@ namespace AdventOfCode._2020_Day_2
 
         public PasswordEntry(string passwordEntry)
         {
-            // TODO: Add checks to make sure the passwords are of expected format
             string[] policyAndPassword = passwordEntry.Split(":");
             string[] rangeAndChar = policyAndPassword[0].Split(" ");
             string[] ranges = rangeAndChar[0].Split("-");

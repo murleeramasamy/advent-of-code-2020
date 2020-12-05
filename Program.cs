@@ -2,6 +2,7 @@
 using AdventOfCode._2020_Day_2;
 using AdventOfCode._2020_Day_3;
 using AdventOfCode._2020_Day_4;
+using AdventOfCode._2020_Day_5;
 using System;
 
 namespace AdventOfCode
@@ -58,6 +59,17 @@ namespace AdventOfCode
 
             Console.WriteLine($"Day 4: Number of valid passports: {numberOfValidPassports}");
             Console.WriteLine($"Day 4: Number of valid passports (revised validation): {numberOfValidPassportsRevised}");
+            Console.WriteLine();
+
+            // Day 5
+            string day5FilePath = @"C:\Users\musomanu\source\advent-of-code-2020\2020-Day-5\BinaryBoardingInput.txt";
+
+            BinaryBoarding binaryBoarding = new BinaryBoarding(day5FilePath);
+            var highestSeatId = binaryBoarding.GetHighestSeatId();
+            var mySeatId = binaryBoarding.GetMySeatId();
+
+            Console.WriteLine($"Day 5: Highest seat id: {highestSeatId}");
+            Console.WriteLine($"Day 5: My seat id: {mySeatId}");
             Console.WriteLine();
         }
     }
